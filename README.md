@@ -5,3 +5,5 @@ It will run infinitely with a 10sec interval fetching African news from BBC and 
 Language: Java
 
 Run News.java
+
+By: Samuel Woldemariam    ATR/4862/08
