@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Addis News</title>
+	<script type="text/javascript" src="./jquery.js"></script>
+</head>
+<style type="text/css">
+	body{
+		margin:0;
+		overflow: hidden;
+	}
+	*{
+		box-sizing: border-box;
+	}
+	header{
+		background-color: brown;
+		float: left;
+		display: block;
+		box-sizing: border-box;
+		width: 100%;
+		padding: 20px;
+
+	}
+	#page-title{
+		float: left;
+		display: block;
+		margin:0;
+		color:white;
+	}
+	#content{
+		float: left;
+		display: block;
+		width: 100%;
+		height:400px;
+		padding:5px;
+		margin-bottom: 10px;
+		border:solid 1px #ccc;
+		color:grey;
+	}
+	.inputs{
+		width: 81%;
+		height:45px;
+		font-size: 1em;
+		margin:0;
+		padding: 5px;
+		float: left;
+	}
+	#addBtn{
+		height: 43px;
+		margin:0;
+		width: 19%;
+		float: left;
+	}
+	#newsSec{
+		width:50%;
+		margin-left: 25%;
+		padding-top:15px;
+	}
+	#newsSec h1{
+		width:100%;
+		text-align: center;
+		font-size: 2em;
+	}
+	#link{
+		width:100%;
+	}
+
+</style>
+<header>
+	<h1 id="page-title">Addis News</h1>
+</header>
+
+<body>
+	<section id="body">
+		<section id="newsSec">
+			<h1>Add news</h1>
+			<form action="/news" method="post">
+				<input type="text" name="title" id="title" placeholder="Title..." class="inputs">
+				<input type="submit" value="Add news" id="addBtn">
+				<input type="text" name="link" id="link" class="inputs" placeholder="Link...">
+				<textarea id="content" placeholder="Content..." name="content"></textarea>
+			</form>
+		</section>	
+		
+	</section>
+	
+
+</body>
+</html>
